@@ -121,7 +121,7 @@
 // const verdict = declareMurderer();
 // console.log(verdict);
 
-// Ms White is the murderer. plotTwist is called within changeMurderer so Ms. White is ultimately the killer
+// Ms White is the murderer. Murderer is a let and thus both the const's changeMurder and plotTwist can be called so Ms. White is ultimately the killer
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
