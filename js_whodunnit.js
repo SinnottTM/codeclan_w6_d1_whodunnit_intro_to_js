@@ -52,7 +52,7 @@
 // const secondVerdict = `The murderer is ${murderer}.`;
 // console.log('Second Verdict: ', secondVerdict);
 
-// This will print to the Terminal that the murderer is Mrs Peacock and then print to the Terminal that Professor Plum, is the murder, since murderer is a let and can be changed
+// This will print to the Terminal that the murderer is Mrs Peacock and then print to the Terminal that Professor Plum, is the murder, since murderer is a let and can be changed but declareMurderer has block scoping
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -71,7 +71,7 @@
 // console.log(suspects);
 // console.log(`Suspect three is ${suspectThree}.`);
 
-// This will print the three suspects then say that the third killer is Mrs Peacock. Very straightforward
+// This will print the three suspects with Colonel Mustard as the third (block scoping) then say that the third killer is Mrs Peacock as that is printed outside the scoping. Very straightforward
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
