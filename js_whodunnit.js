@@ -13,7 +13,7 @@
 // const verdict = declareMurderer();
 // console.log(verdict);
 
-// This will print the murderer is Miss Scarlet, there is no variable conflict
+// This will print the murderer is Miss Scarlet, there is no variable conflict at play here so this is very straightforward
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -33,7 +33,7 @@
 // const verdict = declareMurderer();
 // console.log(verdict);
 
-// This will fail as change murderer is set as a const and then there is an attempt to change it
+// This will crash the program as change murderer is set as a const variable and then there is an attempt to change it directly with another const function
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -52,7 +52,7 @@
 // const secondVerdict = `The murderer is ${murderer}.`;
 // console.log('Second Verdict: ', secondVerdict);
 
-// This will print to the Terminal that the murderer is Mrs Peacock and then print to the Terminal that Professor Plum, is the murder, since murderer is a let
+// This will print to the Terminal that the murderer is Mrs Peacock and then print to the Terminal that Professor Plum, is the murder, since murderer is a let and can be changed
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -71,7 +71,7 @@
 // console.log(suspects);
 // console.log(`Suspect three is ${suspectThree}.`);
 
-// This will print the three suspects then say that the third killer is Mrs Peacock 
+// This will print the three suspects then say that the third killer is Mrs Peacock. Very straightforward
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -95,7 +95,7 @@
 // const verdict = declareWeapon();
 // console.log(verdict);
 
-// The weapon will be Revolver as you are changing a key pair in an array, even if its a const it can still have its elements mutated
+// The weapon will be Revolver as you are changing a key pair in an array, even if its a const it can still have its elements mutated. In this case, weapon: Candle Stick can be changed to weapon: Revolver with the changeWeapon function.
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -121,7 +121,7 @@
 // const verdict = declareMurderer();
 // console.log(verdict);
 
-// murderer is a let and it is not effected by changeMurderer being a const as it is not called. plotTwist is called, so murderer is changed
+// Ms White is the murderer. plotTwist is called within changeMurderer so Ms. White is ultimately the killer
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -153,7 +153,7 @@
 // const verdict = declareMurderer();
 // console.log(verdict);
 
-// ChangeMurderer is called before verdict which sets the murder to Mr.Green
+// ChangeMurderer is called before verdict which sets the murder to Mr.Green. I also thing as it is a function that is a const, this may lock the choice
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -213,7 +213,6 @@
 // const verdict = declareMurderer();
 // console.log(verdict);
 
-// by setting murderer as let and then let again inside an if, the original let stands as it is global.
+// By setting murderer as let and then let again inside an if, the original let stands as it is global.
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
