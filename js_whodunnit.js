@@ -153,7 +153,9 @@
 // const verdict = declareMurderer();
 // console.log(verdict);
 
-// ChangeMurderer is called before verdict which sets the murder to Mr.Green. I also thing as it is a function that is a const, this may lock the choice
+// ChangeMurderer is called before verdict which sets the murder to Mr.Green. I also think as it is a function that is a const, this may lock the choice. This one was quite confusing though.
+
+// plottwist can't work as it declares murderer as a let so it is block-scoped, then unexpectedOutcome is also in that blockscope so it is not effected either - Malcolm explained it
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -214,5 +216,95 @@
 // console.log(verdict);
 
 // By setting murderer as let and then let again inside an if, the original let stands as it is global.
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Calum's extension example from hw
+
+// const scenario = {
+//     murderer: 'Miss Scarlet',
+//     room: 'Kitchen',
+//     weapon: 'Candle Stick'
+// };
+// const changeMurderer = function () {
+//     if (scenario.weapon === "Rope") {
+//         scenario.murderer = "Mrs. Peacock";
+//     } else {
+//         scenario.murderer = "Colonel Mustard";
+//         scenario.room = "Hot Tub ;)"
+//     }
+// }
+// const declareMurderer = function () {
+//     return `The murderer is ${scenario.murderer} and they did it in the ${scenario.room}`;
+// }
+// changeMurderer();
+// const verdict = declareMurderer();
+// console.log(verdict);
+
+// else statement is satisfied so Colonel Mustard in the Hot Tub
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Jael's extension example for hw
+
+// const scenario = {
+//     murderer: 'Mr. Green',
+//     weapon: "Rope",
+//     room: "Study"
+// }
+
+// const changeScenario = function () {
+//     scenario.murderer = "Miss Scarlett"
+//     scenario.weapon = "Knife"
+
+//     const plotTwist = function () {
+//         if (scenario.murderer === "Mr. Green" || scenario.weapon === "Knife") {
+//             scenario.room = "Billiard Room"
+//         }
+//     }
+
+//     plotTwist();
+
+// }
+
+// const declareScenario = function () {
+//     return `It was ${scenario.murderer} with the ${scenario.weapon} in the ${scenario.room}!`
+// }
+
+// changeScenario();
+// verdict = declareScenario();
+// console.log(verdict)
+
+//// Should return: It was Miss Scarlet with the Knife in the Billiard Room!
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Alex's extension example for hw
+
+// const scenario = {
+//     murderer: 'Mrs. Peacock',
+//     room: 'Dinning Room',
+//     weapon: 'Knife'
+// };
+
+// if (scenario.weapon === 'Knife') {
+//     scenario.room = 'Kitchen';
+// }
+
+// const changeScenario = function () {
+//     if (scenario.room === 'Kitchen' && scenario.weapon === 'Knife') {
+//         scenario.murderer = 'Madame Rose'
+//     }
+// }
+
+// const declareMurderer = function () {
+//     return `The murderer is ${scenario.murderer}.`;
+// }
+
+// changeScenario();
+// const verdict = declareMurderer();
+// console.log(verdict);
+
+// Murder is Madame Rose, it reads up to satisfy earlier functions etc
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
